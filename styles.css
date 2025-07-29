@@ -69,8 +69,7 @@ section:not(.hero) span {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(26, 26, 46, 0.95);
-    backdrop-filter: blur(20px);
+    background: var(--bg-dark);
     border-bottom: 1px solid var(--border-dark);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -104,12 +103,14 @@ section:not(.hero) span {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--text-light) !important;
-    font-weight: 500;
+    color: #1a1a2e !important;
+    font-weight: 600;
     transition: all 0.3s ease;
     padding: 0.5rem 1rem;
     border-radius: 8px;
@@ -117,7 +118,7 @@ section:not(.hero) span {
 
 .nav-menu a:hover {
     color: var(--accent-purple) !important;
-    background: rgba(139, 92, 246, 0.1);
+    background: rgba(139, 92, 246, 0.15);
 }
 
 .hamburger {
@@ -129,7 +130,7 @@ section:not(.hero) span {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--text-light);
+    background: var(--text-white);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -1140,6 +1141,19 @@ section:nth-child(even) {
 
     .nav-menu {
         display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--bg-dark);
+        flex-direction: column;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-dark);
+        box-shadow: var(--shadow-dark);
+    }
+    
+    .nav-menu.active {
+        display: flex;
     }
 
     .hero-container {
