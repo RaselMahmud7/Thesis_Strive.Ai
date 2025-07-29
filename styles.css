@@ -69,11 +69,11 @@ section:not(.hero) span {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--bg-dark);
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid var(--border-dark);
     z-index: 1000;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow-dark);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {

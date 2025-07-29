@@ -33,13 +33,25 @@ function initNavigation() {
 
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
         if (window.scrollY > 100) {
             navbar.style.background = 'rgba(255, 255, 255, 0.98)';
             navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
         } else {
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = 'none';
+            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
         }
+        
+        // Always ensure dark text for light background
+        navLinks.forEach(link => {
+            link.style.color = '#1a1a2e !important';
+        });
+    });
+    
+    // Set initial state
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.style.color = '#1a1a2e !important';
     });
 }
 
