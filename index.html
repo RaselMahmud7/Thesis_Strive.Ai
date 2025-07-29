@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluating the Efficacy of LLM-Generated UI Modules for Personalized Learning Dashboards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>DTU Thesis</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#collaboration">Collaboration</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">🤖</span> Evaluating the Efficacy of LLM-Generated UI Modules for Personalized Learning Dashboards
+                </h1>
+                <p class="hero-subtitle">
+                    A research-driven evaluation of how generative AI can transform personalized learning interfaces — in collaboration with Digital Ops and Strive AI.
+                </p>
+                <div class="hero-author">
+                    <div class="author-info">
+                        <strong>Author:</strong> Md Rasel Mahmud<br>
+                        <strong>Institution:</strong> Technical University of Denmark (DTU)
+                    </div>
+                    <div class="dtu-logo">
+                        <i class="fas fa-university"></i>
+                        <span>DTU</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="downloadProposal()">
+                        <i class="fas fa-download"></i>
+                        Download Proposal PDF
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="module-card">
+                            <div class="module-icon">🤖</div>
+                            <div class="module-text">LLM Modules</div>
+                        </div>
+                        <div class="module-card">
+                            <div class="module-icon">⚡</div>
+                            <div class="module-text">Dynamic UI</div>
+                        </div>
+                        <div class="module-card">
+                            <div class="module-icon">🎨</div>
+                            <div class="module-text">Personalized</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section id="summary" class="summary">
+        <div class="container">
+            <h2 class="section-title">Executive Summary</h2>
+            <div class="summary-content">
+                <div class="summary-text">
+                    <p class="summary-highlight">
+                        This thesis explores how Large Language Models (LLMs) can generate dynamic UI modules for personalized learning dashboards, addressing the static nature of current educational platforms.
+                    </p>
+                    <p class="summary-details">
+                        In collaboration with Digital Ops and Strive AI, the study compares traditionally designed modules with LLM-generated ones through user studies using quantitative metrics and qualitative feedback.
+                    </p>
+                    <p class="summary-details">
+                        The goal is to produce evidence-based design guidelines for LLM-driven interfaces that improve personalization and user experience.
+                    </p>
+                    <div class="summary-points">
+                        <div class="point">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>LLM-Generated UI</h4>
+                                <p>Dynamic UI generation based on user behavior and learning patterns</p>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>User Experience Study</h4>
+                                <p>Comprehensive testing with real users in educational settings</p>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Technical Implementation</h4>
+                                <p>Partnership with Digital Ops and Strive AI for real-world implementation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Problem Statement -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">Problem Statement</h2>
+            <div class="problem-content">
+                <div class="problem-text">
+                    <p class="problem-highlight">
+                        Learning dashboards have become popular but fall short due to their static nature—presenting data in the same format regardless of user needs.
+                    </p>
+                    <p class="problem-details">
+                        This generic approach fails to support meaningful learning, especially for users with diverse goals. LLMs offer new opportunities for dynamic UI components that adapt content and layout based on individual user behavior.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Questions -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Questions</h2>
+            <div class="research-main">
+                <h3 class="main-question">Main Research Question:</h3>
+                <p class="main-question-text">
+                    How does the performance and user experience of LLM-generated UI modules compare to traditionally designed static modules in learning dashboards?
+                </p>
+            </div>
+            <div class="research-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="usability">
+                        <i class="fas fa-user-shield"></i>
+                        RQ1: Usability & Trust
+                    </button>
+                    <button class="tab-btn" data-tab="engagement">
+                        <i class="fas fa-mouse-pointer"></i>
+                        RQ2: Engagement & Behavior
+                    </button>
+                    <button class="tab-btn" data-tab="design">
+                        <i class="fas fa-cogs"></i>
+                        RQ3: Design & Implementation
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="usability">
+                        <h3>How do users perceive the usability, personalization, and trustworthiness of LLM-generated modules compared to static ones?</h3>
+                        <ul>
+                            <li>User confidence in AI-generated interfaces</li>
+                            <li>Perceived reliability and consistency</li>
+                            <li>Learning curve and adaptation time</li>
+                            <li>Error handling and user feedback</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="engagement">
+                        <h3>Do users interact more frequently or effectively with AI-generated modules?</h3>
+                        <ul>
+                            <li>Task completion times and accuracy</li>
+                            <li>Interaction logs (clicks, time on task)</li>
+                            <li>System Usability Scale (SUS) scores</li>
+                            <li>Engagement frequency and patterns</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="design">
+                        <h3>What practical challenges arise when designing, deploying, and evaluating LLM-based modules in an existing platform like Strive AI?</h3>
+                        <ul>
+                            <li>Technical integration challenges</li>
+                            <li>Design and deployment considerations</li>
+                            <li>Evaluation methodology in real-world settings</li>
+                            <li>Scalability and maintainability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="methodology">
+        <div class="container">
+            <h2 class="section-title">Methodology</h2>
+            <div class="methodology-content">
+                <div class="methodology-overview">
+                    <p class="methodology-intro">
+                        This study will follow a mixed-methods approach, combining a comparative user experiment with interviews and survey data.
+                    </p>
+                </div>
+                <div class="methodology-phases">
+                    <div class="phase">
+                        <div class="phase-header">
+                            <div class="phase-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <h3>Phase 1: Module Design & Implementation</h3>
+                        </div>
+                        <p>In partnership with Digital Ops, I will help create two dashboard modules:</p>
+                        <div class="module-comparison">
+                            <div class="module-item">
+                                <h4>Module A (Static)</h4>
+                                <p>A fixed UI built using traditional best practices—same layout and content for all users.</p>
+                            </div>
+                            <div class="module-item">
+                                <h4>Module B (LLM-Generated)</h4>
+                                <p>A dynamic UI that uses LLMs to personalize summaries, highlight relevant data points, and even adapt visuals depending on user data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-header">
+                            <div class="phase-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Phase 2: User Study</h3>
+                        </div>
+                        <p>Around 16–20 participants will take part in an A/B test:</p>
+                        <ul>
+                            <li><strong>Group A:</strong> Will use the static module</li>
+                            <li><strong>Group B:</strong> Will use the LLM-based module</li>
+                            <li>Tasks will be standardized (e.g., identifying personal progress, setting new goals)</li>
+                            <li>Both groups will complete a set of interactions on the Strive AI staging dashboard</li>
+                        </ul>
+                    </div>
+                    <div class="phase">
+                        <div class="phase-header">
+                            <div class="phase-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Phase 3: Data Collection & Analysis</h3>
+                        </div>
+                        <div class="data-collection">
+                            <div class="data-type">
+                                <h4>Quantitative Data:</h4>
+                                <ul>
+                                    <li>System Usability Scale (SUS)</li>
+                                    <li>Task completion times</li>
+                                    <li>Interaction logs (clicks, time on task, engagement frequency)</li>
+                                </ul>
+                            </div>
+                            <div class="data-type">
+                                <h4>Qualitative Data:</h4>
+                                <ul>
+                                    <li>Post-task questionnaires</li>
+                                    <li>Semi-structured interviews to gather open-ended feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2 class="section-title">Research Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Month 1</h3>
+                        <p>Onboarding & setup</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Month 2-3</h3>
+                        <p>Design & implementation</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Month 4</h3>
+                        <p>User study</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Month 5</h3>
+                        <p>Data analysis</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Month 6</h3>
+                        <p>Finalization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Collaboration -->
+    <section id="collaboration" class="collaboration">
+        <div class="container">
+            <h2 class="section-title">Company Collaboration</h2>
+            <div class="collaboration-content">
+                            <div class="company-info">
+                <div class="company-logo">
+                    <i class="fas fa-building"></i>
+                    <span>Digital Ops / Strive AI</span>
+                </div>
+                <p>The collaboration with Digital Ops is central to the success of this thesis. Their work on Strive AI offers a real-world platform to test this concept in a meaningful way.</p>
+            </div>
+            
+            <div class="strive-ai-overview">
+                <h3>What is Strive AI?</h3>
+                <p class="strive-intro">
+                    An adaptive goal-tracking platform that helps users achieve goals through intelligent data collection, monitoring, and motivation systems.
+                </p>
+                
+                <div class="strive-features">
+                    <div class="strive-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>1. Unified Data Collection</h4>
+                            <p>Single entry point for all data types with intelligent file organization</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strive-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>2. Comprehensive Monitoring</h4>
+                            <p>Automated data collection from email, calendar, documents, and screenshots</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strive-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>3. Dynamic Visualization</h4>
+                            <p>AI-generated dashboards showing real-time progress and tasks</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strive-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>4. Intelligent Attention System</h4>
+                            <p>Attention AI dynamically routes relevant data to appropriate functions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strive-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>5. Goal Optimization</h4>
+                            <p>AI agent analyzes user data to help create realistic goals and priorities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strive-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>6. Social Motivation</h4>
+                            <p>Gamified challenges with friends and AI-judged goal completion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="strive-benefits">
+                    <h4>Research Benefits</h4>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-flask"></i>
+                            <h5>Real-world Testing</h5>
+                            <p>Live platform with actual users</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-cogs"></i>
+                            <h5>Technical Integration</h5>
+                            <p>Existing AI infrastructure</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <h5>User Diversity</h5>
+                            <p>Varied user base</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="collaboration-grid">
+                    <div class="collab-column">
+                        <h3>Digital Ops Provides</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Strive AI staging access</li>
+                            <li><i class="fas fa-check"></i> Backend/API support</li>
+                            <li><i class="fas fa-check"></i> Deployment assistance</li>
+                            <li><i class="fas fa-check"></i> Industry expertise</li>
+                        </ul>
+                    </div>
+                    <div class="collab-column">
+                        <h3>I Deliver</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Research design & execution</li>
+                            <li><i class="fas fa-check"></i> Evaluation protocols</li>
+                            <li><i class="fas fa-check"></i> Empirical comparison</li>
+                            <li><i class="fas fa-check"></i> Design guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expected Outcomes -->
+    <section class="outcomes">
+        <div class="container">
+            <h2 class="section-title">Expected Outcomes & Contributions</h2>
+            <div class="outcomes-grid">
+                <div class="outcome-card">
+                    <div class="outcome-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>📊 Empirical Comparison</h3>
+                    <p>Comparison between static and AI-generated UI modules with user study data</p>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>🎨 Design Guidelines</h3>
+                    <p>Practical guidelines for building personalized dashboard components using LLMs</p>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>🧩 Real-world Case Study</h3>
+                    <p>Case study demonstrating generative AI integration in learning platforms</p>
+                </div>
+            </div>
+            <div class="contributions">
+                <h3>Broader Impact</h3>
+                <p>The results will be relevant not only for Strive AI but also for the broader fields of Human-Computer Interaction, Learning Analytics, and AI in Education.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-center">
+                    <p>&copy; <script>document.write(new Date().getFullYear());</script> Md Rasel Mahmud. All rights reserved.</p>
+                    <p>Master's Thesis Proposal - Technical University of Denmark</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
